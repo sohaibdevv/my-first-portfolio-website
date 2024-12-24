@@ -3,7 +3,11 @@
 # Live Demo: [Here!](https://sohaibdevv.github.io/Portfolio/)
 
 # Description
-This is a simple, responsive portfolio website built with HTML, CSS, and JavaScript. It showcases my web development skills and allows viewers to learn more about my projects and experience. Whether you're a beginner looking to create your first website or an experienced developer seeking inspiration, this project provides a solid foundation. 
+This simple, responsive portfolio website, built with **HTML, CSS, and JavaScript,** demonstrates my ability to create **clean, responsive, and user-friendly websites.**
+</br></br>
+It showcases my web development skills and allows viewers to learn more about my projects and experience.
+</br></br>
+Whether you're a beginner looking to create your first website or an experienced developer seeking inspiration, this project provides a **solid foundation.**
 
 # Technical Stack
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
