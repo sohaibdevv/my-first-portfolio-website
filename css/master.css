@@ -179,14 +179,6 @@ nav {
     list-style: none;
   }
 
-  .skills ul li:hover {
-    transform: scale(1.05);
-    background-color: #faf5f5;
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  }
-
   .skills ul li{
     cursor: pointer;
   }
@@ -219,14 +211,6 @@ nav {
     gap: 3rem;
     list-style: none;
   }
-
-  .certifications ul li:hover {
-    transform: scale(1.05);
-    background-color: #faf5f5;
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  } 
 
   .about {
     background-color: #fff;
@@ -564,11 +548,6 @@ nav {
     .footerb__socials a {
       color: #fff;
       font-size: 2.3rem;
-    }
-
-    .footerb__socials a:hover{
-        transform: scale(1.1); /* Increase size by 10% */
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Increase shadow size */
     }
     
     @media screen and (max-width: 768px) {
