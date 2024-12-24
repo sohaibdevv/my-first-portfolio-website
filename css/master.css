@@ -63,10 +63,17 @@ nav {
     width: 100%;
   }
 
+  
   .container {
     margin: 0 auto;
     max-width: 107rem;
     padding: 0 4rem;
+  }
+
+  @media (max-width: 460px) {
+    .container {
+      padding: 0 1.7rem;
+    }
   }
 
   .content {
@@ -148,14 +155,15 @@ nav {
     position: absolute;
     flex-wrap: wrap;
     gap: 3rem;
+    margin-top: 4rem;
   }
 
-  .skills p{
+  .skills p {
     border-right: 2px solid rgba(45,46,50,.5);
     color: #2d2e32;
     font-family: Mulish,sans-serif;
     font-weight: 600;
-    margin-right: 7rem;
+    margin-right: 5rem;
     padding-right: 2rem;
   }
   
@@ -179,7 +187,8 @@ nav {
     left: 0;
     position: absolute;
     flex-wrap: wrap;
-    gap: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
   .certifications p {
@@ -187,7 +196,7 @@ nav {
     color: #2d2e32;
     font-family: Mulish,sans-serif;
     font-weight: 600;
-    margin-right: 7rem;
+    margin-right: 2rem;
     padding-right: 2rem;
   }
   
@@ -277,7 +286,7 @@ nav {
     line-height: 1.5;
   }
 
-  .project {
+  /* .project {
     background-color: #f9f9f9;
     padding: 15rem 0;
   }
@@ -289,7 +298,7 @@ nav {
   }
 
   .new-projects {
-    color: #2d2e32;
+    color: #2d2e32;;
     font-size: 2.6rem;
     text-align: center;
   }
@@ -306,24 +315,65 @@ nav {
     margin: 0 auto;
     margin-top: 2rem;
     object-fit: cover;
-  }
+  } */
 
-  .article-title h3 {
-    color: #147efb;
-    font-size: 1.7rem;
-    font-weight: 700;
+  .project {
+    background-color: #f9f9f9;
+    padding: 5rem 2rem; /* Reduce padding for smaller screens */
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+  }
+  
+  @media screen and (max-width: 768px) { 
+    .container {
+      padding: 0 2rem; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) { 
+    .container {
+      padding: 0 1rem;
+    }
+  }
+  
+  .new-projects {
+    color: #2d2e32;;
+    font-size: 2.6rem;
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
+  }
+  
+  .img-project {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .img-project img {
+    border-radius: 1.7rem;
+    max-width: 50%;
+    height: auto; 
+    margin: 0 auto;
+    margin-top: 2rem;
+    object-fit: cover;
   }
 
   .articles {
-    margin-top: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     background-color: #fff;
-    /* margin-top: 50px; */
-    /* background-color: #f8f8f8; */
-    /* padding: 20px; */
+    padding: 2rem; 
+  }
+  
+  .article-title h2 {
+    color: #2d2e32;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem; 
+    text-transform: uppercase;
   }
   
   .article-list {
@@ -332,17 +382,19 @@ nav {
     grid-gap: 20px;
   }
   
+  @media screen and (max-width: 768px) { 
+    .article-list {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
   .article-list li {
     font-family: Mulish, sans-serif;
     font-size: 16px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .article-list h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    list-style-type: none;
   }
   
   .article-list a {
@@ -351,23 +403,35 @@ nav {
   }
   
   .article-list a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3; 
+  }
+  
+  .article-list p{
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+
+
+  @media (max-width: 1020px) {
+    .contact {
+      padding: 8rem 0;
+    }
   }
 
   .contact {
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 11rem 0;
-  }
-
-  .container {
-    margin: 0 auto;
-    max-width: 107rem;
-    padding: 0 4rem;
   }
 
   .contact__content {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (max-width: 750px) {
+    .contact__title {
+      text-align: center;
+    }
   }
 
   .contact__title p {
@@ -383,11 +447,26 @@ nav {
     font-size: 2.5rem;
   }
 
+  @media (max-width: 750px) {
+    .contact__icons {
+      flex-direction: column;
+      gap: 5rem;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
   .contact__icons {
     display: flex;
     flex-wrap: wrap;
     gap: 8rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
+  }
+
+  @media (max-width: 750px) {
+    .contact__icon-box {
+      flex-direction: column;
+    }
   }
 
   .contact__icon-box {
@@ -406,7 +485,6 @@ nav {
     height: 5rem;
     justify-content: center;
     width: 5rem;
-    margin-top: 2rem;
   }
 
   .contact__info {
@@ -420,52 +498,77 @@ nav {
     font-size: 1.7rem;
   }
 
-  .contact__info p {
+  .contact__info a, .contact__info p {
     color: #767676;
     cursor: pointer;
     font-size: 1.7rem;
     text-decoration: none;
   }
 
-  .contact__info a {
-    color: #767676;
+  .contact__info a:hover{
+    color: #007bff;
     cursor: pointer;
-    font-size: 1.7rem;
-    text-decoration: none;
   }
 
-  footer {
-    background-color: #2d2e32;
-    padding: 5rem 0;
-    width: 100%;
+  @media (max-width: 750px) {
+    .contact__icon-box {
+      flex-direction: column;
+    }
   }
 
-  .container {
-    margin: 0 auto;
-    max-width: 107rem;
-    padding: 0 4rem;
-  }
-
-  .footerb {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  footer h3 {
-    color: #fff;
-    font-size: 1.7rem;
-  }
-
-  .footerb__socials {
-    align-items: center;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .footerb__socials a {
-    color: #fff;
-    font-size: 2.3rem;
-  }
+    footer {
+      background-color: #2d2e32;
+      padding: 5rem 0;
+      width: 100%;
+    }
+    
+    .container {
+      margin: 0 auto;
+      max-width: 107rem;
+      padding: 0 4rem;
+    }
+    
+    @media screen and (max-width: 768px) { 
+      .container {
+        padding: 0 2rem; /* Reduce padding for smaller screens */
+      }
+    }
+    
+    @media screen and (max-width: 460px) { 
+      .container {
+        padding: 0 1.7rem; /* Further reduce padding for very small screens */
+      }
+    }
+    
+    .footerb {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    footer h3 {
+      color: #fff;
+      font-size: 1.7rem;
+      flex: 1; /* Allow footer h3 to take up available space */
+    }
+    
+    .footerb__socials {
+      align-items: center;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .footerb__socials a {
+      color: #fff;
+      font-size: 2.3rem;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .footerb {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; 
+        gap: 2rem; /* Add space between elements */
+      }
+    }
