@@ -54,7 +54,11 @@ nav {
     transition: all .23s;
   }
 
-  .hero {
+  nav li a:hover{
+    color: #007bff;
+  }
+
+   .hero {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
@@ -125,11 +129,12 @@ nav {
 
   .hero-text span a {
     transition: all .2s;
-  }
-
-  .hero-text span a {
     color: #2d2e32;
     font-size: 3rem;
+  }
+
+  .hero-text span a:hover {
+    color: #007bff;
   }
 
   .hero-img {
@@ -155,7 +160,7 @@ nav {
     position: absolute;
     flex-wrap: wrap;
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 
   .skills p {
@@ -196,7 +201,7 @@ nav {
     color: #2d2e32;
     font-family: Mulish,sans-serif;
     font-weight: 600;
-    margin-right: 2rem;
+    margin-right: 3rem;
     padding-right: 2rem;
   }
   
@@ -286,36 +291,6 @@ nav {
     line-height: 1.5;
   }
 
-  /* .project {
-    background-color: #f9f9f9;
-    padding: 15rem 0;
-  }
-
-  .container {
-    margin: 0 auto;
-    max-width: 107rem;
-    padding: 0 4rem;
-  }
-
-  .new-projects {
-    color: #2d2e32;;
-    font-size: 2.6rem;
-    text-align: center;
-  }
-
-  .img-project {
-    display: flex;
-    justify-content: center; 
-  }
-
-  .img-project img {
-    border-radius: 1.7rem;
-    height: 30%;
-    width: 30%; 
-    margin: 0 auto;
-    margin-top: 2rem;
-    object-fit: cover;
-  } */
 
   .project {
     background-color: #f9f9f9;
@@ -411,16 +386,15 @@ nav {
     font-weight: 600;
   }
 
+  .contact {
+    background-color: #fff;
+    padding: 11rem 0;
+  }
 
   @media (max-width: 1020px) {
     .contact {
       padding: 8rem 0;
     }
-  }
-
-  .contact {
-    background-color: #fff;
-    padding: 11rem 0;
   }
 
   .contact__content {
@@ -485,6 +459,12 @@ nav {
     height: 5rem;
     justify-content: center;
     width: 5rem;
+    cursor: pointer;
+  }
+
+  .contact__icon-box span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
   }
 
   .contact__info {
@@ -510,6 +490,11 @@ nav {
     cursor: pointer;
   }
 
+  .contact__icons p:hover{ 
+    color: #007bff;
+    cursor: pointer;
+  }
+
   @media (max-width: 750px) {
     .contact__icon-box {
       flex-direction: column;
@@ -530,13 +515,13 @@ nav {
     
     @media screen and (max-width: 768px) { 
       .container {
-        padding: 0 2rem; /* Reduce padding for smaller screens */
+        padding: 0 2rem; 
       }
     }
     
     @media screen and (max-width: 460px) { 
       .container {
-        padding: 0 1.7rem; /* Further reduce padding for very small screens */
+        padding: 0 1.7rem; 
       }
     }
     
@@ -549,7 +534,7 @@ nav {
     footer h3 {
       color: #fff;
       font-size: 1.7rem;
-      flex: 1; /* Allow footer h3 to take up available space */
+      flex: 1; 
     }
     
     .footerb__socials {
@@ -564,11 +549,16 @@ nav {
       color: #fff;
       font-size: 2.3rem;
     }
+
+    .footerb__socials a:hover{
+        transform: scale(1.1); /* Increase size by 10% */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Increase shadow size */
+    }
     
     @media screen and (max-width: 768px) {
       .footerb {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column; 
         text-align: center; 
-        gap: 2rem; /* Add space between elements */
+        gap: 2rem; 
       }
     }
