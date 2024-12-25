@@ -36,6 +36,20 @@ nav {
     z-index: 200
 }
 
+/* Hide the navigation bar on mobile devices */
+@media screen and (max-width: 768px) { 
+  nav {
+    display: none; 
+  }
+}
+
+/* Show the navigation bar on larger screens */
+@media screen and (min-width: 769px) {
+  .navbar {
+    display: block; 
+  }
+}
+
 .logo {
     color: #2d2e32;
     cursor: pointer;
@@ -66,7 +80,6 @@ nav {
     position: relative;
     width: 100%;
   }
-
   
   .container {
     margin: 0 auto;
@@ -79,7 +92,7 @@ nav {
       padding: 0 1.7rem;
     }
   }
-
+  
   .content {
     align-items: center;
     display: flex;
@@ -210,17 +223,11 @@ nav {
     flex-wrap: wrap;
     gap: 3rem;
     list-style: none;
-  }
+  } 
 
   .about {
     background-color: #fff;
     padding: 15rem 0;
-  }
-
-  .container {
-    margin: 0 auto;
-    max-width: 107rem;
-    padding: 0 4rem;
   }
 
   .about-content {
@@ -295,12 +302,6 @@ nav {
   .project {
     background-color: #f9f9f9;
     padding: 5rem 2rem; /* Reduce padding for smaller screens */
-  }
-  
-  .container {
-    margin: 0 auto;
-    max-width: 107rem;
-    padding: 0 4rem;
   }
   
   @media screen and (max-width: 768px) { 
