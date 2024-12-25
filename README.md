@@ -15,7 +15,7 @@ Whether you're a beginner looking to create your first website or an experienced
 [![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
 
 # Features
-* Responsive design
+* Responsive design ❌
 * Clean and minimalist design
 * Clear navigation
 
