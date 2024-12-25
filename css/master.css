@@ -336,7 +336,7 @@ nav {
     object-fit: cover;
   }
 
-  .articles {
+   .articles {
     margin-top: 5rem;
     margin-bottom: 5rem;
     background-color: #fff;
@@ -386,7 +386,7 @@ nav {
   .article-list p{
     font-family: sans-serif;
     font-weight: 600;
-  }
+  } 
 
   .contact {
     background-color:  #f9f9f9;
@@ -462,11 +462,6 @@ nav {
     justify-content: center;
     width: 5rem;
     cursor: pointer;
-  }
-
-  .contact__icon-box span:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
   }
 
   .contact__info {

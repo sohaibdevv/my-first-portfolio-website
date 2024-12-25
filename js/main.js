@@ -78,17 +78,32 @@ document.head.appendChild(styleElement);
 // Start the animation (if needed, as it will already be running)
 // rotatingElement.style.animationPlayState = 'running';
 
+const contactIconBoxes = document.querySelectorAll('.contact__icon-box span');
+
+contactIconBoxes.forEach(span => {
+  span.addEventListener('mouseenter', () => {
+    // span.style.transition = 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out';
+    span.style.transform = 'scale(1.0)';
+    span.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.15)';
+  });
+
+  span.addEventListener('mouseleave', () => {
+    span.style.transform = 'scale(1)';
+    span.style.boxShadow = 'none';
+  });
+});
+
 const socialLinks = document.querySelectorAll('.footerb__socials a');
 
 socialLinks.forEach(link => {
   link.addEventListener('mouseover', () => {
-    link.style.transition = 'all 0.2s ease-in-out'; 
-    link.style.transform = 'scale(1.1)';
+    link.style.transition = 'all 0.1s ease-in-out'; 
+    link.style.transform = 'scale(1.2)';
     link.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.15)'; 
   });
 
   link.addEventListener('mouseout', () => {
-    link.style.transition = 'all 0.2s ease-in-out'; 
+    link.style.transition = 'all 0.1s ease-in-out'; 
     link.style.transform = 'scale(1)';
     link.style.boxShadow = 'none'; 
   });
