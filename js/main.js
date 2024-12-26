@@ -1,3 +1,15 @@
+const navLinks = document.querySelectorAll('nav li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    link.style.color = '#007bff';
+  });
+
+  link.addEventListener('mouseout', () => {
+    link.style.color = 'initial'; // Reset color to default
+  });
+});
+
 const heroImg = document.querySelector('.hero-img');
 
 heroImg.addEventListener('mouseover', () => {
