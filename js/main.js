@@ -10,6 +10,19 @@ navLinks.forEach(link => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  function setHeroMarginTop() {
+      const navHeight = document.querySelector('nav').offsetHeight;
+      const heroSection = document.querySelector('.hero'); // Changed to target class
+      if (heroSection) { // Make sure the element exist
+       heroSection.style.marginTop = `${navHeight}px`;
+      }
+  }
+
+  setHeroMarginTop(); // Set on initial load
+  window.addEventListener('resize', setHeroMarginTop); // Adjust on resize
+});
+
 const heroImg = document.querySelector('.hero-img');
 
 heroImg.addEventListener('mouseover', () => {
