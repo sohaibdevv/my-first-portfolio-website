@@ -153,6 +153,13 @@ nav ul a {
   display: flex;
   gap: 1.3rem;
   margin: 2.5rem 0;
+  justify-content: flex-start; /* Align left on larger screens */
+}
+
+@media (max-width: 768px) {
+  .hero-text span {
+    justify-content: center; /* Center on smaller screens */
+  }
 }
 
 .hero-text span a {
@@ -165,19 +172,33 @@ nav ul a {
   color: #007bff;
 }
 
- .hero-img {
-      background-image: url('../images/sohaibimg.jpg');
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: 3px solid #2d2e32;
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-      height: 35rem;
-      position: relative;
-      transition: all 1s ease-in-out;
-      width: 35rem;
-      margin-bottom: 2rem;
-  }
+.hero-img {
+  background-image: url('../images/sohaibimg.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 35rem;
+  position: relative;
+  width: 35rem;
+  margin-bottom: 2rem;
+  animation: morph 5s ease-in-out infinite;
+}
+
+@keyframes morph {
+0% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+50% {
+  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+
+100% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+}
 
 @media (max-width: 768px) {
   .hero-img {

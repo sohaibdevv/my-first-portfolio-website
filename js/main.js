@@ -23,20 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', setHeroMarginTop); // Adjust on resize
 });
 
-const heroImg = document.querySelector('.hero-img');
-
-heroImg.addEventListener('mouseover', () => {
-  heroImg.style.transition = 'all 0.5s ease-in-out';
-  heroImg.style.transform = 'scale(1.05)'; 
-  heroImg.style.borderRadius = '90%'; // Change border-radius on hover
-});
-
-heroImg.addEventListener('mouseout', () => {
-  heroImg.style.transition = 'all 0.5s ease-in-out';
-  heroImg.style.transform = 'scale(1)'; 
-  heroImg.style.borderRadius = '60% 40% 30% 70%/60% 30% 70% 40%'; // Reset border-radius
-})
-
 const listItems = document.querySelectorAll('.skills ul li');
 
 listItems.forEach(listItem => {
