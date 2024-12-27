@@ -184,7 +184,7 @@ nav ul a {
     width: 25rem;
       height: 25rem;
     margin-top: 3rem;
-     order: 1; /* Move image after text on mobile */
+     order: -1; /* Move image after text on mobile */
   }
  }
   
@@ -446,6 +446,7 @@ nav ul a {
   border: 1px solid #ccc;
   border-radius: 5px;
   list-style-type: none;
+  margin-top: 2rem;
 }
 
 .article-list a {

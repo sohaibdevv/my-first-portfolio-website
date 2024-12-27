@@ -6,7 +6,7 @@ navLinks.forEach(link => {
   });
 
   link.addEventListener('mouseout', () => {
-    link.style.color = 'initial'; // Reset color to default
+    link.style.color = '#2d2e32'; // Reset color to default
   });
 });
 
