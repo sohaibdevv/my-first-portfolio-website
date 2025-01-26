@@ -183,7 +183,7 @@ nav ul a {
   position: relative;
   width: 35rem;
   margin-bottom: 2rem;
-  animation: morph 5s ease-in-out infinite;
+  animation: morph 7s ease-in-out infinite;
 }
 
 @keyframes morph {
