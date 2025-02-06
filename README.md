@@ -11,7 +11,7 @@ Whether you're a beginner looking to create your first website or an experienced
 
 **Note:** This project was developed with the assistance of AI tools. My role involved using prompt engineering and AI proficiency to refine and guide the AI-generated code. This process allowed me to leverage AI effectively, demonstrating my understanding of web development principles and my ability to iterate on AI output.
 
-## Technical Stack
+## Technologies Used
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 </br>
 [![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
