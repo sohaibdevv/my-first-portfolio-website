@@ -1,4 +1,4 @@
-# Portfolio Website 😄
+# Portfolio Website 🤠 😄
 
 ## Live Demo: [Here!](https://sohaibdevv.github.io/Portfolio/)
 
@@ -12,9 +12,7 @@ Whether you're a beginner looking to create your first website or an experienced
 **Note:** This project was developed with the assistance of AI tools. My role involved using prompt engineering and AI proficiency to refine and guide the AI-generated code. This process allowed me to leverage AI effectively, demonstrating my understanding of web development principles and my ability to iterate on AI output.
 
 ## Technologies Used
-[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
-</br>
-[![My Skills](https://skillicons.dev/icons?i=git)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,git)](https://skillicons.dev)
 
 ## Features
 * Responsive design
