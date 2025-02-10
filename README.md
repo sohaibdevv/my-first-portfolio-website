@@ -14,7 +14,7 @@ Whether you're a beginner looking to create your first website or an experienced
 ## Technologies Used
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,git)](https://skillicons.dev)
 
-## Features
+## Features ✔
 * Responsive design
 * Clean and minimalist design
 * Clear navigation
