@@ -558,7 +558,7 @@ nav ul a {
   height: 5rem;
   justify-content: center;
   width: 5rem;
-  cursor: pointer;
+/*   cursor: pointer; */
 }
 
 .contact__info {
