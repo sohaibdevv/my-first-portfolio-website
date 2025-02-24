@@ -1,6 +1,6 @@
-# Portfolio Website 🤠 😄
+# My First Portfolio Website 
 
-## Live Demo: [Here!](https://sohaibdevv.github.io/Portfolio/)
+## Live Demo: [Here!](https://sohaibdevv.github.io/my-first-portfolio-website/)
 
 ## Description 🙂
 This simple, responsive portfolio website, built with **HTML, CSS, and JavaScript**, demonstrates my ability to create **clean, responsive, and user-friendly web experiences.**
