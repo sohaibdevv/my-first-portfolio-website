@@ -97,6 +97,7 @@ nav ul a {
       justify-content: center;
       padding: 5rem 0;
       position: relative;
+      min-height: 140vh;
   }
 
   .hero-main {
@@ -225,8 +226,11 @@ nav ul a {
     position: relative;
     flex-wrap: wrap;
     gap: 3rem;
+    /* gap: 2rem; */
     margin-top: 4rem;
+    /* margin-top: 2rem; */
     padding: 1rem;
+    /* padding: 2rem; */
     width: 100%; /* Add full width */
     justify-content: center; /* Center content */
 }
@@ -288,8 +292,8 @@ nav ul a {
   list-style: none;
 } 
   .certifications img{
-   width: 5rem;
-  height: 5rem;
+   width: 8rem;
+  height: 8rem;
 }
 
 .about {
