@@ -334,58 +334,6 @@ nav ul a:hover {
   object-fit: cover;
 }
 
-/* Articles Section */
-.articles {
-  margin: 5rem 0;
-  background: #fff;
-  padding: 2rem;
-}
-
-.article-title h2 {
-  color: #2d2e32;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-}
-
-.article-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .article-list { grid-template-columns: 1fr; }
-}
-
-.article-list li {
-  font-family: 'Mulish', sans-serif;
-  font-size: 1.6rem;
-  padding: 1.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  list-style: none;
-  margin-top: 2rem;
-}
-
-.article-list a {
-  color: #007bff;
-  text-decoration: none;
-  line-height: 2rem;
-  transition: color .2s;
-}
-
-.article-list a:hover {
-  color: #0056b3;
-}
-
-.article-list p {
-  font-family: sans-serif;
-  font-weight: 500;
-}
-
 /* Contact Section */
 .contact {
   background: #f9f9f9;
